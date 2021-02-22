@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Evento onclick</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=rmgWj_EqH-9aj5oIAoqltsbGEFgQS_8XqegztOBN9nsUB1OnHQaQqHDBBl-hDUypv9QQ5HcNIBm0Mf6W7KJ9T_vW5o25mqXUJvWQ3c578-A1SdWswwmVVwtfDAmt-ERsJ5jTBUL3Ak9mtAuj6R2PFaYNzV74js7yMAb3ZK25Xs-n1JjgUCXKiUL-yC1tEzPoE8Vri1DwOvmHVu2nJ8BBATCCU_927Xj6AKGs40erZHm_vj_JHTSx59hzb8xK4jN8r-pGlvvFdpMGmhfn-yuccBG1WqCK15B4PepvKcqVeAWFV3wMkakR4H5f19xIshDPcXTKIhawWUCQiTRSLdvZJQ" charset="UTF-8"></script><script>
+      function initElement() {
+        var p = document.getElementById("foo");
+        p.onclick = showAlert;
+      };
+
+      function showAlert(event) {
+        alert("onclick detectado!");
+      }
+    </script>
+    <style>
+      #foo {
+        border: solid blue 2px;
+      }
+    </style>
+  </head>
+  <body onload="initElement();">
+    <span id="foo">Haz Clic</span>
+    <p>párrafo siguiente</p>
+  </body>
+</html>
